@@ -1,7 +1,29 @@
 <!DOCTYPE html>
 <html>
-<title>Downloads</title>
+<title>Noticias</title>
 <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 175px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 6px 8px;
+  text-decoration: none;
+  text-size: 13px
+}
+li a.active {
+  background-color: #ffffff;
+  color: gray;
+}
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
 body {
     background-image: url("background.jpg");
     text-align:left
@@ -28,14 +50,16 @@ div.relative {
 <body>
 <img src="logo.png" width="168" height="39">
 <h2>Noticias</h2>
-<a href="index.html">
-Inicio</a>
-<br></br>
-<a href="downloads.html">
-Descargas</a>
-<br></br>
-<a href="meetminwix.html">
-Conoce Minwix</a>
+<ul>
+    <li><a href="index.html">
+    Inicio</a></li>
+    <li><a href="meetminwix.html">
+    Conoce Minwix</a></li>
+    <li><a href="downloads.html">
+    Descargas</a></li>
+    <li><a class="active" href="news.html">
+    Noticias</a></li>
+</ul>
 <div class="relative">News
 <br></br>
 WinMixer está aquí, un nuevo reproductor de audio para Windows
