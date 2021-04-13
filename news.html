@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Noticias</title>
 <style>
+body {
+  margin: 0;
+  background-image: url("background.jpg");
+}
+h2 {    font-family:"rockwell";
+  color:white
+}
+
+h3 {    font-family:"rockwell";
+  color:white
+}
+
+p {    font-family:"calibri";
+  color:white
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 175px;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family:"rockwell";
 }
 
 li a {
   display: block;
-  color: white;
-  padding: 6px 8px;
+  color: #f1f1f1;
+  padding: 8px 16px;
   text-decoration: none;
-  text-size: 13px
 }
+
 li a.active {
-  background-color: #ffffff;
-  color: gray;
+  background-color: #003f8f;
+  color: white;
 }
+
 li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
-body {
-    background-image: url("background.jpg");
-    text-align:left
-}
-h2 {
-    color:white;
-    font-family:"rockwell"
-}
-a {
-    color:white;
-    font-family:"calibri";
-}
-div.relative {
-  position: relative;
-  color:white;
-  width: 600px;
-  height: 200px;
-  left: 200px;
-  bottom: 125px;
-  font-size:20px
-}
-
 </style>
+</head>
 <body>
-<img src="logo.png" width="168" height="39">
-<h2>Noticias</h2>
+
 <ul>
-    <li><a href="index.html">
-    Inicio</a></li>
-    <li><a href="meetminwix.html">
-    Conoce Minwix</a></li>
-    <li><a href="downloads.html">
-    Descargas</a></li>
-    <li><a class="active" href="news.html">
-    Noticias</a></li>
+  <img src="logo.png" alt="Minwix" width="268" height="62.4">
+  <li><a href="index.html">Principal</a></li>
+  <li><a class="active" href="news.html">Noticias</a></li>
+  <li><a href="downloads.html">Descargas</a></li>
+  <li><a href="about.html">Acerca de...</a></li>
 </ul>
-<div class="relative">News
-<br></br>
-WinMixer está aquí, un nuevo reproductor de audio para Windows
-<br></br>
-Minwix está aquí!
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Bienvenido a las noticias.</h2>
+  <h3>Cambios en la estética de la pagina</h3>
+  <p>Decidí cambiar la apariencia de la pagina a una mejor.</p>
+  <p></p>
+  <h3>Perdón por el retraso</h3>
+  <p>Pronto finalizaré la nueva versión de WinMixer.</p>
 </div>
+
 </body>
 </html>
